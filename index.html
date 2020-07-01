@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Accueil">
+		<meta name="viewport" content="width-device-width, initial-scale=1"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="HandheldFriendly" content="true">
+		<title>Kyoto, Accueil</title>
+		<link rel="stylesheet" type="text/css" href="Accueil.css">
+	</head>
+	<body>
+		<header>	
+			<nav id="navbar">	  		
+				<div class="case" id="adjustpadding"><img class="tab" id="logo" src="Logo.jpeg" alt="logo" width="242" height="242"/></div>
+				<div class="case" id="casermv"><a href="#Accueil" class="tab">Accueil</a></div>
+				<span class="casemq"><div class="case"><a href="#Présentation" class="tab">Présentation</a></div>
+				<div class="case"><a href="#Monuments" class="tab">Monuments</a></div></span>
+				<span class="casemq"><div class="case"><a href="#Contactez-nous" class="tab">Contactez-nous</a></div>
+				<div class="case"><a href="#Apropos" class="tab">À propos de nous</a></div></span>	
+			</nav>
+			<!--BARRE DE NAV FIXE-->
+			<nav id="navbarfix"> 
+				<div id=case2>Tourisme à Kyoto</div> 
+			</nav>
+			<script>
+			var largeur = window.innerWidth;
+			var hauteur = window.innerHeight;
+			window.onscroll = function() {myFunction()};
+			var navbar = document.getElementById("navbarfix");
+			var sticky = navbar.offsetTop;
+			function myFunction() 
+			{
+  				if (window.pageYOffset >= sticky) {
+    			navbar.classList.add("sticky")
+  				} else {
+  	  			navbar.classList.remove("sticky");
+  				}
+			}
+			</script>
+		</header>
+		<div id="content">
+			<!-- SECTION ACCUEIL-->
+			<section class="acc" id="Accueil">
+				<h1> Kyoto</h1>
+			</section>
+			<!--SECTION HISTOIRE-->
+			<section class="his" id="Présentation">
+					<h2>Présentation</h2>
+					<div class="TexteHistoirelr" id="Art1" >
+						<h4>Histoire</h4>
+						<p>Kyoto est principalement le centre historique du Japon. Fondée en 794 sous le nom d'Heian-kyo, c'est-à-dire «la capitale de la paix et de la tranquillité », elle a été construite selon les plans de grandes villes chinoises de l'époque, à savoir en damier. Elle est devenue une cité de plus en plus importante au fur et à mesure des règnes des empereurs. Elle fut alors la capitale de l'Empire du Soleil levant jusqu'en 1868, date à laquelle l'empereur déménagea à Edo (devenue par la suite Tokyo).<br/></p>
+						<h4>Géographie</h4>
+					 	<p>Sur une simple carte, les temples et les autres sanctuaires de la «ville-capitale» semblent très accessibles à pied. Le fameux plan en damier est trompeur. Cette ville, bordée sur trois côtés (ouest, nord et est) par des collines et des montagnes et traversée par une rivière, fait une longueur de 40 kilomètres et une largeur de 10 kilomètres. Les grands centres du bouddhisme et du shintoïsme sont dans les montagnes qui l'entourent.
+						</p>
+					</div>
+					<div class="TexteHistoirelr " id="Art2">
+						<h4>Une ville Touristique</h4>
+						<p>Même si Tokyo est la capitale du Japon et, surtout, le centre économique de l'archipel nippon, Kyoto reste pour le peuple japonais la «capitale» culturelle de l'Empire du Soleil levant. Une simple balade dans les rues de Kyoto permet à n'importe quel touriste de comprendre la richesse du patrimoine nippon conservé dans cette cité de 1,4 million d'habitants. Pour les déplacements, pas d'inquiétude, la ville est desservie par le fameux  Shinkansen et est à 80 min de l'aéroport du Kansai.</p>
+						<p id="adjustpadding2">Il y a au moins un temple, si ce n'est pas deux, à tous les coins de rue. Au total, le ministère du Tourisme japonais comptabilise 1600 temples, 400 sanctuaires shintos et 200 jardins sacrés dans Kyoto. Vingt pour cent des trésors nationaux de l'archipel ainsi qu'une vingtaine de lieux classés au patrimoine mondial de l'humanité de l'UNESCO sont dans cette ville aux allures discrètes mais symboliques. Kyoto est une véritable ville-musée ouverte aux visiteurs du monde entier. 
+						</p>
+					</div>
+			</section>
+			<!--SECTION MONUMENTS-->
+			<section class="mon" id="Monuments">
+				<h2>Monuments</h2>
+				<nav id="shrine">	 <!--Monuments côte à côte-->
+						<a href="#mon1"><img class="Shrine" src="FushimiInari.jpg" alt="Temple de Kamigamo Shrine" title="Temple de Kamigamo Shrine" width="1920" height="2560"/></a><a href="#mon2"><img class="Shrine" src="Toji.jpg" alt="Temple de To-ji" title="Temple de To-ji" width="768" height="1024"/></a><a href="#mon3"><img class="Shrine" src="KiyomizuDera.jpg" alt="Temple de Nishi Hongan-ji" title="Temple de Nishi Hongan-ji" width="549" height="877"/></a>
+				</nav>
+				<!--Monument n°1-->
+				<div class="monanddesc" id="mon1">
+					<figure class=floatright>
+						<img class="imghis"  src="FushimiInari.jpg" alt="Image du temple de Fushimi Inari Taisha, et de son chemin des 10000 Torii (Portails japonais de couleur rouge)" title="Temple de  Fushimi Inari" width="1920" height="2530"/>
+						<figcaption class="leghis">Le Chemin des 10000 Torii</figcaption>
+					</figure>
+					<h3>Fushimi Inari Taisha</h3>
+					<p class="TexteMonleft Artm">
+					Erigée au sommet de la colline Inariyama, Fushimi Inari Taisha est un temple dédié à la déesse du riz et du saké dans la religion shintoïste. La beauté de ce complexe se dévoile au gré d’une randonnée pédestre, sous le rouge écarlate des 10000 Torii japonais. <br /><br /> <!--On considère que l'image explique ce qu'est un Torii"-->
+					D’une durée d’environ deux heures, le chemin se trace sur quelques kilomètres entre les arbres, avant d’atteindre le Temple. La marche vous sera agréable, avec des étages pour se reposer, des restaurants et quelques boutiques. <br /><br />
+					Une fois arrivé au temple, une vue sur plus de 1000 ans d’histoire japonaise vous attend. L’architecture japonaise prend place à la visite, au sein des temples voué à la déesse Inari.
+					</p>
+					<p class="TexteMonleft"> Adresse: 68 Yabunouchi-cho, Fukakusa Fushimi-ku, Kyoto<br />
+					Horaires: 7:00-18:30 / 8:30-16:30 (Prière)</p>
+				</div>
+				<!--Monument n°2-->
+				<div class="monanddesc" id="mon2">
+					<figure>
+						<img  class="imghis" src="Toji.jpg" alt="Vue nocture au Temple de To-ji" title="Temple de To-ji" width="768" height="1024"/>
+						<figcaption class="leghis">Vue nocture sur Temple de To-ji</figcaption>
+					</figure>
+					<h3>To-ji </h3>	
+					<p class="TexteMonleft Artm">
+						Au sud-ouest de la ville, le temple To-ji vous ouvre ses portes pour partir à la découverte de tout un patrimoine culturel. Cette pagode de cinq étages vous offrira une découverte inoubliable si vous êtes un passionné de la culture japonaise. <br /><br />
+						Du haut de ses 57 mètres de hauteur, ce temple est le plus haut du Japon. Comme les autres temples bouddhistes au Japon, celui de To-ji est composé de plusieurs bâtiments recelant des richesses inestimables, tant au niveau de leur architecture qu’au niveau des trésors qui y sont enfouis. <br /><br />
+						Parmi les parties ouvertes aux visiteurs et qui restent incontournables, il faut noter le Kondô, salle avec une statue du bouddha guérisseur qui veille sur ce lieu.
+					</p>
+					<p class="TexteMonleft"> Adresse: 68 Yabunouchi-cho, Fukakusa Fushimi-ku, Kyoto<br />
+					Horaires: 7:00-18:30 / 8:30-16:30 (Prière)</p>
+				</div>
+				<!--Monument n°3-->
+				<div class="monanddesc" id="mon3">
+					<figure class=floatright>
+						<img  class="imghis" src="KiyomizuDera.jpg" alt="Vue d'Automne au Temple de Kiyomizu-Dera" title="Temple de Kiyomizu-Dera" width="549" height="877"/>
+						<figcaption class="leghis">La pagode de Kiyomizu-Dera</figcaption>
+					</figure>	
+					<h3>Kiyomizu Dera</h3>	
+					<p class="TexteMonleft Artm">
+					Elevée au rang de patrimoine mondial de l’UNESCO, continue à émerveiller des millions de visiteurs chaque année. Le Temple de l’eau pure, Kiyomizu-Dera est un groupement de temples située dans une vallée boisée. <br /><br />
+					En franchissant la grande porte, débute une réelle promenade de découverte. Reflet de la culture japonaise, <br/>le complexe abrite une somptueuse padoge sur trois étages, surmontée d'une flèche de métal forgé.<br /><br />
+					Après la visite des moults temples, une vue superbe est vous est offerte sur la foret environnante. Depuis la véranda en bois, vous verrez une mer qui s’imprègne<br />tour à tour des tons écarlates de l’automne ou de la somptueuse verdure du printemps.
+					</p>
+					<p class="TexteMonleft"> Adresse: 1-294 Kiyomizu Higashiyama-ku, Kyoto<br />
+					Horaires: 6:00-18:00 / 18:30-21:00 (Visite nocturne)</p>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<a href="#"><input type="button" id="bouton" value="︿"></a>
+		</footer>
+		</body>
+</html>

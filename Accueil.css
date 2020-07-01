@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand|Solway&display=swap');
+
+
+/*------2 Barres_de_Navigation-------*/
+#navbar{ /*Navbar initial*/
+	background-color: #EC502E;
+	text-align: center;
+	border-bottom:solid;
+}
+.case{
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-right:40px;
+	padding-left :40px;
+	display: inline-block;
+
+}
+#adjustpadding{	
+	padding-top:0;	
+}
+#navbarfix{ /*navbarsecondaire*/
+	color:white;
+	font-size: 18px;
+	font-family:"Solway";
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left: 20vw;
+	padding-right:80vw; 
+	background: rgba(0, 0, 0, 0.5);
+	border-top:solid;
+	border:black;
+	position: fixed;
+	z-index: 2;
+	white-space: nowrap;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+a{  
+	font-size: 150%;
+	color: black;
+	font-family: "Assistant";
+	font-weight: lighter;
+	text-decoration: none;
+}
+a:hover{
+	border-bottom: solid;
+	border-bottom-width: 3px;  /*Border-Bottom au lieu de text-decoration pour pouvoir maitriser l'épaisseur du trait*/
+}
+#logo{
+	
+      width:25px;
+      height:25px;
+      border:solid;
+      border-radius:50%;
+      border-width:2px;
+      position:relative;
+      top:1vh;
+      padding:3px;
+} 
+/*-------Sections---------*/
+#Accueil{  
+	margin: 0;
+	padding:0;
+	background-image: url("Mont Fuji.jpg");
+	background-repeat: no-repeat;
+	background-size:100%;
+	height:650px;
+	
+	
+}
+#Présentation{
+	background-color: #d9401e;
+	margin:0;
+	padding:0;
+	height:710px;
+	text-align:center;	
+}
+#Monuments
+{
+	margin:0;
+	padding:0;
+}
+.monanddesc{
+	background-color: #d9401e;
+	margin:0;
+	padding:0;
+	height:747px;
+	text-align:center;	
+}
+/*-------Titre De Sections-------*/
+h1{
+	font-size:90px;
+	position: absolute;
+	top: 25vh;
+	left: 10vw;
+	font-family:"Nunito";
+	color:white;
+	border:solid;
+	border-width:4px;
+	border-radius:22px;
+	padding:45px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+h2{
+	font: small-caps bold 55px/1 "Solway";
+	color:white;
+	background-color:#5e3735;
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:40px;
+	margin:0;
+	letter-spacing:6px;
+	border:solid;
+	border-color:black;
+}
+
+h3{
+	font: small-caps bold 35px/1 "Solway";
+	color:white;
+	padding-top:32px;
+	padding-bottom:32px;
+	text-align:center;
+	margin:0;
+	letter-spacing:6px;
+	border:solid;
+	border-color:black;
+	background-color:#5e3735;
+}
+h4{
+	margin:0;
+	font: small-caps bold 25px/1 "Solway";
+	color:white;
+}
+/*Cadres avec texte et description*/  
+.TexteHistoirelr{  /*Texte partie Présentation*/
+	background-color:#5e3735;  
+	display:inline-block;
+	height:490px;
+	width:600px;
+	color:#dbd4bf;
+	font-family: "Quicksand";
+	font-size:19px; 
+	padding:10px;
+	padding-bottom:0;
+	border:solid;
+	border-color:black;
+	border-width:2px; 
+	text-align:justify;
+	position: relative;
+	top:35px; 
+}
+#Art2{
+	margin-left:3px;	
+}
+#adjustpadding2{
+	padding-top: 20px;
+}
+.TexteMonleft{  /*Texte partie Monuments*/
+	background-color:#5e3735;
+	display:inline-block;
+	color:#dbd4bf;
+	font-family: "Quicksand";
+	font-size:22px;
+	position: relative;
+	top:17px; 
+	width: 600px; 
+	padding-top:10px;  
+	padding-bottom:10px;
+	padding-right:5px;
+	padding-left:5px;
+	border:solid;
+	border-color:black;
+	border-width:2px;  
+}
+/*-------Images/Legendes-------*/
+
+figure{
+	float:left;
+	margin:0;
+	padding:0;
+	display:inline-block;
+}
+.floatright{
+	float:right;
+}
+.imghis{
+	height:725px;
+	width:483px;
+	border: solid;
+	border-bottom:none;
+	margin:0;
+	padding:0;
+}
+.leghis{
+	position:relative;
+	bottom:10px;
+	background-color: #911d33;
+	color:white;
+	font-size: 15px;
+	font-family:"Solway";
+	text-align:center;
+	font-weight:lighter;
+	border:solid;
+	border-top:none;
+	padding-top:3px;
+	padding-bottom:4px;  
+	border-bottom:none;
+	border-color:black;
+}
+.Shrine
+{
+	display:inline-block;
+	height:100vh;
+	width:33.33%;
+	filter: grayscale(100%); 
+    vertical-align:bottom;
+}
+.Shrine:hover{
+    filter: grayscale(0%);
+}
+/*-------Autres------*/
+body{
+	margin:0;
+}
+#bouton{
+   position: fixed;
+   bottom: 3vh;
+   right: 2vw;
+   padding-bottom: 10px;
+   background: rgba(0, 0, 0, 0.5);
+   color:white;
+
+}
+html{
+	background-color:#d9401e;		
+}
+
+/*---MediaQueries--*/
+/*Mediaqueries générales*/
+@media (min-width:350px) and (max-width:1159Px)
+{
+
+	#Accueil{					
+		
+		height:130vw;
+		max-height: 650px;
+		top:20px;
+	}
+	#Monuments{
+		height:auto;
+	}
+	.monanddesc{
+		height:auto;
+	}
+	.imghis{  	
+		display:none;	
+	}
+	.leghis{ 	
+		display:none;
+	}
+
+}
+/*Titres*/
+@media (min-width:350px) and (max-width:700px){
+	h1{  
+		font-size:70px;
+		padding:35px;
+		position:relative;
+		top:220px;
+		left:0;
+		margin-top:0;
+		border:none;
+		border-radius:0;
+		background: rgba(0, 0, 0, 0.5);
+		text-align:center;
+	}
+	h2{  
+		font-size:40px; 
+		padding:30px;
+	}
+	h3{
+		font-size:30px; 
+		padding:25px;
+	}
+	h4{
+		font-size:20px; 
+	}
+
+}
+@media (min-width:700px) and (max-width:1159Px){
+	h1{  
+		font-size:80px;
+		padding:35px;
+		position:relative;
+		top:220px;
+		left:0;
+		margin-top:0;
+		border:none;
+		border-radius:0;
+		background: rgba(0, 0, 0, 0.5);
+		text-align:center;
+	}
+	h2{  
+		font-size:50px; 
+		padding:30px;
+	}
+	h3{
+		font-size:35px; 
+		padding:25px;
+	}
+	h4{
+		font-size:25px; 
+	}
+}
+@media (min-width:350px) and (max-width:500px){
+		h1{				
+		top:180px;
+	}
+}
+/*RESIZING NAV BAR*/
+@media (min-width:910px) and (max-width:1170px) 
+{
+	.case{
+		padding-right:2vh;
+		padding-left:2vh;
+
+	}
+}
+@media (min-width:800px) and (max-width:910px)
+{
+	.case{
+		padding-right:1vh;
+		padding-left:1vh;
+
+	}
+}
+
+@media (min-width:350px) and (max-width:800px){ 
+	.case{  
+	display:inline-block;			
+	font-size:2vw;
+	padding:10px;
+	}
+	.casemq{
+		display:block;
+		margin-left:60px;
+	}
+	#casermv{
+		display:none;
+	}
+	#adjustpadding{
+		position: absolute;
+		top:10px;
+		left:2px;
+	}
+}
+@media (min-width:350px) and (max-width:600px)
+{
+	.case{
+		font-size:12px;
+	}
+}
+/*REMOVE NAVBARFIX*/
+@media (min-width:350px) and (max-width:1159px){
+	#navbarfix		/*BARRE DE NAV FIXE*/			
+	{
+		visibility: hidden;
+	}
+}
+/*RESIZING ACCUEIL SECTION*/
+@media (min-width:350px) and (max-width:615px){  /*3 Medias queries pour changer le fond en fonction de la taille de l'écran*/
+	#Accueil{					
+	background-image:url("Histoire3.jpeg");
+	background-size:100%;
+	}
+
+}
+@media (min-width:615px) and (max-width:757px){
+	#Accueil{
+	background-image:url("Kyotoimg.jpg");
+	background-size:100%;
+	}
+
+}
+@media (min-width:757px) and (max-width:1159px){
+	#Accueil{
+	background-image:url("Kyotoimg2.jpg");
+	background-size:100%;
+	}
+}
+
+/*RESIZING PRESENTATION SECTION*/
+@media (min-width:350px) and (max-width:1260px){ 
+	#Présentation{			
+		height:auto;	
+	}
+	.TexteHistoirelr{
+		display:block;
+		position:initial;
+		margin-right:auto;
+		margin-left:auto; 
+		height:auto;
+	}
+	#Art1{	
+		margin-bottom:20px;
+		margin-top:40px;
+	}
+	#Art2{
+		margin-left:auto;  /*Est respécifié en plus de la classe car plus haut Art: margin-left:2;*/ 
+		margin-bottom:40px;
+	}	
+}
+@media (min-width:700px) and (max-width:1260px)
+{
+	.TexteHistoirelr{
+		width:50vw;
+		font-size:2vw;
+	}
+}
+@media (min-width:350px) and (max-width:700px) /*sert a fixer un min-font-size*/
+{
+	.TexteHistoirelr{
+		width:300px;
+		font-size:15px;
+	}
+}
+/*RESIZING MONUMENTS COTE A COTE*/
+
+@media (min-width:300px) and (max-width:1260px)
+{
+		.Shrine{     
+		height:70vw;
+		min-height:390px;
+	}
+}
+/*RESIZING MONUMENTS&DESC SECTION*/
+
+@media (min-width:350px) and (max-width:1100px)
+{
+	.TexteMonleft{
+		display:block;
+		margin-right:auto;
+		height:auto;
+		position:initial;
+		margin-left:auto;
+	}
+	.Artm{
+		margin-bottom:20px;
+		margin-top:30px;
+	}
+}
+@media (min-width:350px) and (max-width:700px)  /*sert a fixer un min-font-size*/
+{
+	.TexteMonleft{
+		width:300px;
+		font-size:15px;
+	}
+}
+
+@media (min-width:700px) and (max-width:1110px)  
+{
+	.TexteMonleft{
+		width:50vw;
+		font-size:2vw;
+	}
+}
+
+
+
+
+
+
+
+
